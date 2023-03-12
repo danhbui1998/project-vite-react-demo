@@ -1,8 +1,10 @@
 import React from 'react';
 import { Navigate, NavLink, Outlet, Link } from 'react-router-dom';
+import { useAuth } from '../components/AuthContext';
 import { PATH } from '../config/path';
 
-const ProfileLayout = ({ logout }) => {
+const ProfileLayout = () => {
+    const { logout } = useAuth();
     return (
         <div>
             {/* <Navigate to={PATH.home} /> */}

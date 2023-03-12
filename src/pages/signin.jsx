@@ -1,9 +1,10 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom/dist';
+import { useAuth } from '../components/AuthContext';
 import { PATH } from '../config/path';
 
-function Signin({ login }) {
+function Signin() {
+    const { login } = useAuth();
     const navigate = useNavigate();
     const onSubmit = () => {
         login();

@@ -1,9 +1,12 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { PATH } from '../../config/path';
+import { useAuth } from '../AuthContext';
 
-const Header = ({ user }) => {
+const Header = () => {
+    const { user } = useAuth();
     // console.log(user);
+
     return (
         <div className="flex justify-between">
             <div className="logo"></div>

@@ -5,7 +5,7 @@ import { PATH } from '../../config/path';
 const CourseCard = ({ money, thumbnailUrl, long_desc, short_desc, title, slug, id }) => {
     const path = generatePath(PATH.courseDetail, { slug, id });
     return (
-        <div className=" course">
+        <div className="h-80 border-2 border-[#ccc] border-solid">
             <div className="wrap">
                 <Link className="cover" to={path}>
                     <img src={thumbnailUrl} alt="" />

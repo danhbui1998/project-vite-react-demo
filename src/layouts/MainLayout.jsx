@@ -3,12 +3,12 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
-const MainLayout = (props) => {
+const MainLayout = () => {
     // console.log(user);
     // console.log(props);
     return (
         <div>
-            <Header {...props} />
+            <Header />
             <Outlet />
             <Footer />
         </div>
